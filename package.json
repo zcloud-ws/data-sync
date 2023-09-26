@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.21.0",
+    "@google-cloud/bigquery": "^7.2.0",
     "@headlessui/react": "^1.7.12",
     "@heroicons/react": "^2.0.16",
     "autoprefixer": "^10.4.13",
@@ -35,7 +36,11 @@
   "eslintConfig": {
     "extends": [
       "@quave/quave"
-    ]
+    ],
+    "rules": {
+      "no-console": "off",
+      "no-restricted-syntax": "off"
+    }
   },
   "husky": {
     "hooks": {
